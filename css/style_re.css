@@ -78,7 +78,10 @@ a{
     text-decoration: none;
     color: inherit; 
 }
-
+#wrap{
+    width: 100%;
+    overflow-x: hidden; /**삐져나온곳 안보이게 원으로 된 부분**/
+}
 .inner{
     max-width: 1400px; 
     margin: 0 auto;
@@ -161,7 +164,7 @@ header #nav_btn ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100px;
+    width: 100%;
 }
 
 header nav ul li:nth-child(6), header nav ul li:nth-child(7){
@@ -179,17 +182,21 @@ header #nav_btn ul li:nth-child(2){
     font-weight: 500;
     cursor: pointer;
 }
+header #nav_btn ul li:nth-child(1) img{
+    height: 18px;
+    position: relative;
+    top: 4px;
+    padding-right: 20px;
+}
 header #nav_btn ul li:nth-child(2) img{
     position: relative;
     top: -3px;
+    padding-left: 10px;
 }
-header #nav_btn ul li:nth-child(1) img{
-    height: 18px;
-    padding-right: 25px;
-    position: relative;
-    top: 4px;
+header #nav_btn a{
+    width: 80px;
+    text-align: right;
 }
-
 
 /******************호버 적용***********************/
 
@@ -202,6 +209,7 @@ nav:hover{
     background:white;
     height: 300px;
 }
+
 ul#out{
     display: flex;
     justify-content: center;
