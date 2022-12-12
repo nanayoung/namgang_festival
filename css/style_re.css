@@ -242,8 +242,8 @@ ul#out li ul li{
     display: block;
 }
 ul#out a:hover{
-    color:orange;
-    border-bottom: 1px solid orange;
+    color:#0ca37b;
+    border-bottom: 1px solid #FFD03B;
 }
 ul#out ul a:hover{
     border-bottom: none;
@@ -438,6 +438,14 @@ ul#out ul a{
     height: 450px;
 }
 
+#s_cont_6 .left_inner .font_16 a{
+    background: linear-gradient(180deg,rgba(0,0,0,0) 50%, lightcoral 50%) no-repeat;
+    background-size: 0;
+    transition: 1s;
+}
+#s_cont_6 .left_inner .font_16 a:hover{
+    background-size: 100%;
+}
 /**section6 거점 지역 전시등전시 - 지도 이미지 첨부 하는 부분**/
 
 /**section7 역사의 강 평화를 담다 - 정사각형 4개 부분**/
