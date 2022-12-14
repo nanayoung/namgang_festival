@@ -89,6 +89,7 @@ a{
 .inner_1{
     max-width: 1930px;
     margin: 0 auto;
+    background-color: #fff;
 }
 h1,h4,h5,h6{
     font-family: 'GowunDodum-Regular';
@@ -330,7 +331,9 @@ ul#out ul a{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 140px;
+    background-color: #fff;
 }
+/**
 #s_cont_2 #inner_cir h1{
     margin-bottom: 14px;
 }
@@ -363,7 +366,7 @@ ul#out ul a{
     width: 70px;
     position: relative;
     top: 70px;
-}
+}**/
 /****section2 부교시리즈**/
 
 
