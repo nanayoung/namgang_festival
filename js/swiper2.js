@@ -1,4 +1,5 @@
 $(document).ready(function(){   
+
   var mySwiper = new Swiper ('.swiper-container', {
     speed: 400,
     spaceBetween: 100,
@@ -26,7 +27,7 @@ $(document).ready(function(){
     // Distance between slides in px.
     spaceBetween: 60,
     //
-    slidesPerView: 2,
+    slidesPerView: 3,
     //
     centeredSlides: true,
     //
