@@ -1,0 +1,48 @@
+
+
+
+.wrap{
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(211, 235, 255); 
+    display: none;
+    text-align: center; 
+    padding-top: 100px;
+    box-sizing: border-box;} /**box-sizing패딩준만큼 하이트 늘어남 방지**/
+    .pop1{
+        display: none;
+    }
+
+    /*checkbox숨김**/
+    #pop1{
+        position: absolute;
+        top: 0;
+    }
+    
+    .popup_bg{
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        top: 0; /**fixed 는 브라우저가 기준, relative는 자기기준, absolute는 부모기준**/
+        z-index: 30; /**배경 뒤로 보내서 둥근모양 숨기기**/
+    }
+    .popup{
+        width: 300px; 
+        height: 300px; 
+        background-color: rgb(255, 161, 180); 
+        position: fixed;
+        top: 200px;
+        right: 47%;
+        /**position: relative; 
+        top: 50px; 
+        left: 50px;**/}
+
+    .close{
+        background-color: azure; 
+        padding: 5px 10px;
+        position: absolute; 
+        bottom: 5px; 
+        right: 10px;}
+
+    input[id="pop1"]:checked~.popup_bg{display: none;}
