@@ -25,6 +25,7 @@
         height: 100%;
         position: fixed; 
         top: 0; /**fixed 는 브라우저가 기준, relative는 자기기준, absolute는 부모기준**/
+        z-index: 30; /**배경 뒤로 보내서 둥근모양 숨기기**/
     }
     .popup{
         width: 300px; 
