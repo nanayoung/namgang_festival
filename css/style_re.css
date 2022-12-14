@@ -161,13 +161,6 @@ header #logo img{
     padding: 10px 0 10px 0;
 }
 
-header #nav_btn ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
 header nav ul li:nth-child(6), header nav ul li:nth-child(7){
     padding-right: 0px;
 }
@@ -177,27 +170,45 @@ header nav ul li:nth-child(7){
     top: -2px;
 }
 
-header #nav_btn ul li:nth-child(2){
+header .nav_right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .nav_right #ham img{
+    height: 18px;
+    position: relative;
+    top: 4px;
+}
+header .nav_right #nav_btn{
     font-family: 'sans-serif';
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
 }
-header #nav_btn ul li:nth-child(1) img{
-    height: 18px;
-    position: relative;
-    top: 4px;
-    padding-right: 20px;
-}
-header #nav_btn ul li:nth-child(2) img{
+header .nav_right #nav_btn img{
     position: relative;
     top: -3px;
     padding-left: 10px;
 }
-header #nav_btn a{
-    width: 80px;
+header .nav_right a{
     text-align: right;
 }
+header .nav_right #ham{
+    width: 150px;
+}
+
+
+.nav_right #nav_btn:hover{
+    background-color: #fff;
+    height: 100px;
+}
+
+
+
 
 /******************호버 적용***********************/
 
@@ -295,7 +306,7 @@ ul#out ul a{
 /**section1**/
 
 
-/****section2 부교시리즈**/
+/****section2 slide**/
 #s_cont_2{
     background-color: #fff;
     color: #333;
@@ -323,7 +334,7 @@ ul#out ul a{
 }
 
 
-#s_cont_2 #inner_cir{
+#inner_cir{
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -333,43 +344,7 @@ ul#out ul a{
     padding-bottom: 140px;
     background-color: #fff;
 }
-/**
-#s_cont_2 #inner_cir h1{
-    margin-bottom: 14px;
-}
-#s_cont_2 #inner_cir .cir_left h1,#s_cont_2 #inner_cir .cir_left h3{
-    opacity: 0;
-}
-#s_cont_2 #inner_cir .cir_left p{
-    opacity: 0;
-}
-#s_cont_2 .cir_right h1,#s_cont_2 .cir_right h3{
-    opacity: 0;
-}
-#s_cont_2 #inner_cir .cir_right p{
-    opacity: 0;
-}
-#s_cont_2 #inner_cir h3, #s_cont_2 #inner_cir img{
-    margin-bottom: 60px;
-}
-#s_cont_2 #inner_cir .cir_left{
-    transform: rotate(-15deg);
-}
-#s_cont_2 #inner_cir .cir_right{
-    transform: rotate(15deg);
-}
-#s_cont_2 #inner_cir .cir_left, #s_cont_2 #inner_cir .cir_right{
-    position: relative;
-    top: 100px;
-}
-#s_cont_2 .sign_1, #s_cont_2 .sign_2{
-    width: 70px;
-    position: relative;
-    top: 70px;
-}**/
-/****section2 부교시리즈**/
-
-
+/****section2 slide**/
 
 /**section3,4,5 고유제부터 똑같은 섹션3개 개막식, 폐막식 나오는 부분**/
 #s_cont_3, #s_cont_4, #s_cont_5{
