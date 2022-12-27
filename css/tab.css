@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arita4.0_M';
+    src: url('../font/AnyConv.com__Arita4.0_M.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Arita4.0_SB';
+    src: url('../font/AnyConv.com__Arita4.0_SB.woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Arita4.0_L';
+    src: url('../font/AnyConv.com__Arita4.0_L.woff');
+    font-weight: 300;
+}
+.tab_cont input[type="radio"]{display: none;}
+.tab_cont>label{
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #fff;
+    width: 460px;
+    font-size: 25px;
+    font-family: 'Arita4.0_M';
+    text-align: center;
+    padding: 50px 0;
+    cursor: pointer;
+}
+.tab_cont span{
+    background: linear-gradient(180deg,rgba(0,0,0,0) 50%,#FFD03B 50%) no-repeat; background-size: 0; transition: 1s;
+    /*border-right: solid 2px #9e9e9e;
+    padding-right: 100px;*/
+}
+.tab_cont span:hover{
+    background-size:100%;
+}
+.tab_cont input[type="radio"]:checked+label{
+    background-color:#fff(97, 181, 255);
+}                             
+.tab_cont input[id="tab_1"]:checked~#tab_cont1{
+    display: block;
+} 
+.tab_cont input[id="tab_2"]:checked~#tab_cont2{
+    display: block;
+} 
+.tab_cont input[id="tab_3"]:checked~#tab_cont3{
+    display: block;
+} 
+.tab_bar{
+    width: 2px;
+    height: 40px;
+}
+.tab_cont>div{
+    box-sizing: border-box;
+    width: 1400px;
+    height: 1415px;
+    background-color: #fff;
+    display: none;  
+}
+
+.sub_cont h4{
+    font-family: 'GowunDodum-Regular';
+    font-size: 48px;
+    padding: 120px 0 20px 0;
+}
+.sub_cont p{
+    font-family: 'GowunDodum-Regular';
+    font-size: 26px;
+}
+
+#tab_cont1 img, #tab_cont2 img, #tab_cont3 img{
+    width: 1400px;
+    height: 900px;
+    cursor: pointer;
+}
+.tab_cont_h1, .tab_cont_p{
+    text-align: center;
+}
+.tab_cont_h1{
+    font-family: 'Arita4.0_SB';
+    font-size: 40px;
+    padding: 95px 0 70px 0;
+}
+.tab_cont_p{
+    font-family: 'Arita4.0_M';
+    font-size: 22px;
+    padding-bottom: 125px;
+    line-height: 33px;
+}
+.tab_cont_p span{
+    font-family: 'Arita4.0_SB';
+}
+.tab_cont_p2{
+    font-family: 'Arita4.0_L';
+    font-size: 18px;
+    color: #9e9e9e;
+    padding-bottom: 25px;
+}    
