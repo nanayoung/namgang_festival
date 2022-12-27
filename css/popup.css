@@ -1,4 +1,8 @@
-
+@font-face {
+    font-family: 'Arita4.0_M';
+    src: url('../font/AnyConv.com__Arita4.0_L.woff');
+    font-weight: 300;
+}
 
 
 .wrap{
@@ -28,21 +32,27 @@
         z-index: 30; /**배경 뒤로 보내서 둥근모양 숨기기**/
     }
     .popup{
-        width: 300px; 
-        height: 300px; 
-        background-color: rgb(255, 161, 180); 
+        width: 240px; 
+        height: 200px; 
+        background-color: #fff; 
         position: fixed;
         top: 200px;
         right: 47%;
+        padding: 30px 30px 0 30px;
+        font-size: 16px;
+        font-family: 'Arita4.0_m';
+        line-height: 2.5rem;
+        text-align: center;
         /**position: relative; 
         top: 50px; 
         left: 50px;**/}
 
     .close{
-        background-color: azure; 
+        background-color: rgb(48, 48, 48);
+        color: #fff;
         padding: 5px 10px;
         position: absolute; 
-        bottom: 5px; 
-        right: 10px;}
+        bottom: 15px; 
+        right: 30px;}
 
     input[id="pop1"]:checked~.popup_bg{display: none;}
