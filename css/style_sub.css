@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arita4.0_B';
+    src: url('../font/AnyConv.com__Arita4.0_B.woff');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Arita4.0_L';
+    src: url('../font/AnyConv.com__Arita4.0_L.woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Arita4.0_T';
+    src: url('../font/AnyConv.com__Arita4.0_T.woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Arita4.0_M';
+    src: url('../font/AnyConv.com__Arita4.0_M.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Arita4.0_SB';
+    src: url('../font/AnyConv.com__Arita4.0_SB.woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Arita-buriM';
+    src: url('../font/AnyConv.com__Arita-buriM.woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Arita-buriSB';
+    src: url('../font/AnyConv.com__Arita-buriSB.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Arita-buriL';
+    src: url('../font/AnyConv.com__Arita-buriL.woff');
+    font-weight: 100;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0; padding: 0;
+}
+
+html{
+    font-size: 10px;
+    background-color: #fff;
+}
+
+ul, ol, li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+#wrap{
+    width: 100%;
+    overflow-x: hidden; /**삐져나온곳 안보이게 원으로 된 부분**/
+}
+.inner{
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+.inner_1{
+    max-width: 1930px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+h1,h4,h5,h6{
+    font-family: 'GowunDodum-Regular';
+}
+h1{
+    font-size: 44px;
+}
+h3{
+    font-size: 22px;
+    font-family: 'Arita4.0_B';
+}
+h4{
+    font-size: 32px;
+    padding: 70px 0;
+}
+h5{
+    font-size: 32px;
+}
+h6{
+    font-size: 36px;
+}
+.font_16, .font_18{
+    font-family: 'Arita4.0_M';
+    line-height: 2.8rem;
+}
+.font_16{
+    font-size: 16px;
+}
+.font_18, .font_18_1{
+    font-size: 18px;
+}
+.font_12, .font_15{
+    font-family:'Noto Sans KR', sans-serif;
+}
+.font_12{
+    font-size: 12px;
+}
+.font_15{
+    font-size: 15px;
+}
+.font_18_1{
+    font-family: 'GowunDodum-Regular';
+    line-height: 1.6;
+    font-size: 18px;
+}
+header .inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Arita4.0_SB';
+}
+header .inner .ul_font{
+    font-family: 'Arita4.0_M';
+}
+header .inner .ul_font li span{
+    font-family: 'Arita4.0_SB';
+    text-decoration: underline;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    color: rgb(22, 22, 22);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+header #logo img{
+    height: 64px;
+    padding: 15px 0 10px 0;
+}
+
+header nav ul li:nth-child(6), header nav ul li:nth-child(7){
+    padding-right: 0px;
+}
+
+header nav ul li:nth-child(7){
+    position: relative;
+    top: -2px;
+}
+
+header .nav_right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 150px;
+}
+
+header .nav_right #ham img{
+    height: 18px;
+    position: relative;
+    top: 4px;
+}
+header .nav_right #nav_btn{
+    font-family: 'sans-serif';
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+header .nav_right #nav_btn img{
+    position: relative;
+    top: -3px;
+    padding-left: 10px;
+}
+header .nav_right a{
+    text-align: center;
+    color: #555555;
+}
+
+
+/*******************nav_right(korea) 호버**********************/
+.nav_right #nav_btn{
+    height: 100px;
+    width: 100%;
+}
+.nav_right #nav_btn:hover{
+    background:white;
+    height: 200px;
+}
+#nav_btn .lang li{
+    list-style-type: none;
+    text-align: center;
+    width: 100px;
+}
+#nav_btn .lang{
+    display: none;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+#nav_btn:hover .lang{
+    opacity: 1;
+    display: block;
+}
+.nav_right:hover a{
+    color: #555555;
+}
+
+#nav_btn a:hover{
+    color:#0ca37b;
+    border-bottom: 1px solid #fff;
+}
+#nav_btn .lang a:hover{
+    border-bottom: none;
+}
+#nav_btn .lang a{
+    line-height: 30px;
+}
+
+/*******************nav_right(korea) 호버**********************/
+
+/******************호버 적용***********************/
+
+nav{
+    width:100%;
+    height: 100px;
+}
+nav:hover{
+    background:white;
+    height: 300px;
+}
+
+ul#out{
+    display: flex;
+    justify-content: center;
+}
+ul#out li{
+    list-style-type: none;
+    text-align: center;
+    width: 180px;
+}
+ul#out ul{
+    display: none;
+    padding-top: 30px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+nav:hover ul#out ul{
+    opacity: 1;
+    display: block;
+}
+nav:hover a{
+    color:black;
+}
+ul#out li ul li{
+    padding: 0;
+    text-align: center;
+}
+#header a{
+    line-height: 100px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ffffff00;
+}
+ul#out a:hover{
+    color:#0ca37b;
+    border-bottom: 1px solid #FFD03B;
+}
+ul#out ul a:hover{
+    border-bottom: none;
+}
+ul#out ul a{
+    line-height: 30px;
+}
+
+#header{
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/*******************호버적용**********************/
+
+/*******sub_section1******/
+#sub_sect_1{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    background-image:url("../images/bg/sub_main_2.jpg");
+    background-size: cover;
+    margin-top: 100px;
+}
+.sub_cont{
+    float: left;
+}
+.sub_cont :nth-child(3){
+    padding-top: 40px;
+}
+/*******sub_section1******/
+
+/**section10 회색 아이콘모음**/
+#sns{
+    text-align: right;
+    background-color: #474344;
+    padding: 5px 0;
+}
+#sns a img{
+    width: 38px;
+}
+#sns a:nth-child(1), #sns a:nth-child(2){
+    padding-right: 16px;
+}
+/**section10 회색 아이콘모음**/
+
+/**footer**/
+footer{
+    background-color: #fff;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-start; 
+    padding: 45px 0;
+}
+#footer #f_logo{
+    width: 146px;
+    height: 112px;
+    padding-top: 22px;
+}
+#footer #f_logo img{
+    width: 100%;
+}
+#footer #f_cont ul{
+    padding-bottom: 40px;
+}
+#footer #f_cont ul li{
+    display: inline-block;
+    font-weight: 500;
+}
+#footer #f_cont ul li img{
+    padding: 0 25px;
+    position: relative;
+    top: 2px;
+}
+#footer #f_cont p{
+    font-weight: 400;
+    line-height: 3rem;
+    color: #555555;
+}
+#footer #f_cont ul li:nth-child(9){
+    font-weight: 700;
+}
+#footer #f_cont :nth-child(3){
+    font-weight: 500;
+}
+#footer #site{
+    color: #555555;
+}
+#footer #site a{
+    display: block;
+    border: solid 1px #555555;
+    border-radius: 20px;
+    padding: 8px 35px;
+}
+#footer #site a img{
+    position: relative;
+    top: -3px;
+}    
+/**footer**/
